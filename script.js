@@ -18,6 +18,6 @@ fetch(url + '/products')
             <a href=''>Seller profile</a>
             <button>Buy</button>
             `;
-        });
-    }
-)
+            productsGrid.append(pElem);
+        })
+});

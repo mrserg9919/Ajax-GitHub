@@ -34,3 +34,8 @@ fetch(url + '/products')
 function openCart() {
     cartProd.classList.toggle('hide');
 }
+
+function buyALL() {
+    cart = [];
+    cartProd.innerHTML = 'Money was withdrawn from your credit card';
+}

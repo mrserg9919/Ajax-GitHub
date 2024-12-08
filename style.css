@@ -50,7 +50,15 @@ button {
     border: none;
     min-width: 50%;
 }
-
+#cart-products::before{
+    content: '';
+    border: transparent solid 16px;
+    border-bottom: solid #000 16px;
+    position: relative;
+    top: -2.7rem;
+    left: 15.8rem;
+    z-index: -1;
+}
 /* -----Cart----- */
 
 #cart-button {

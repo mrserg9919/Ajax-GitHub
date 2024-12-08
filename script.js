@@ -9,6 +9,7 @@ function addProductToCart(id) {
         return p.id == id;
     })
     cart.push(product);
+    drawCartProducts();
 }
 
 fetch(url + '/products')

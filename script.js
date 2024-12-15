@@ -34,6 +34,10 @@ function openCart() {
     cartProd.classList.toggle('hide');
 }
 
+localstorage.setItem("cart", JSON.stringify(cart));
+JSON.parse(localstorage.getItem('cart'));
+
+
 
 function drawCartProducts() {
     if (cart.length === 0) return cartProd.innerHTML = 'Cart is empty';

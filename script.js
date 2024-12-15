@@ -71,4 +71,9 @@ function drawCartProducts() {
 function butALL () {
     cart = [];
     cartProd.innerHTML = 'Money was withdrawn from your credit card';
+    localStorage.setItem("cart", '[]');
+}
+
+function openCart() {
+    cartProd.classList.toggle('hide');
 }

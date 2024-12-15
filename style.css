@@ -115,7 +115,12 @@ button {
 
 #cart-products button {
     border: 1px solid #000;
-    margin: 0.5rem 0; */
+    margin: 0.5rem 0;
+
+#cart-button.active {
+    background-color: rgb(170, 255, 170);
+}
+*/
 
 /*------Responsive------*/
 
@@ -187,18 +192,4 @@ button {
     padding: 2rem;
     gap: 1rem;
     border-radius: 1rem;
-}
-
-/* -----Responsive-----*/
-
-@media screen and (max-width: 1000px){
-    #products-grid, #user-products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 600px){
-    #products-grid, #user-products-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }

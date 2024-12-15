@@ -35,8 +35,7 @@ function openCart() {
     cartProd.classList.toggle('hide');
 }
 
-localstorage.setItem("cart", JSON.stringify(cart));
-JSON.parse(localstorage.getItem('cart'));
+
 
 if(localStorage.getItem('cart')) {
     cart = JSON.parse(localStorage.getItem('cart'));
@@ -44,6 +43,7 @@ if(localStorage.getItem('cart')) {
 }
 
 function drawCartProducts() {
+
     if (cart.length === 0) return cartProd.innerHTML = 'Cart is empty';
     cartProd.innerHTML = null;
     let sum = 0;
@@ -58,6 +58,8 @@ function drawCartProducts() {
         <p>Total Price: $${sum}</p>
         <button onclick="buyAll()">Buy All</button>
     `;
+    localstorage.setItem("cart", JSON.stringify(cart));
+    JSON.parse(localstorage.getItem('cart'));
 }
 
 function butALL () {

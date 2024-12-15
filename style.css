@@ -103,7 +103,7 @@ button {
 #cart-button:hover {
     background-color: rgb(170, 170, 255);
 }
-/*
+
 #cart-products p {
     line-height: 2rem;
 }
@@ -120,7 +120,7 @@ button {
 #cart-button.active {
     background-color: rgb(170, 255, 170);
 }
-*/
+
 
 /*------Responsive------*/
 

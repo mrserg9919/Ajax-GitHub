@@ -193,3 +193,13 @@ button {
     gap: 1rem;
     border-radius: 1rem;
 }
+    
+/* Admin */
+
+.form-group {
+    margin: 0.2rem 0;
+}
+
+.form-group label {
+    display: block;
+}

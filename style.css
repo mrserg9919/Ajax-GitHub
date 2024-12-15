@@ -104,6 +104,19 @@ button {
     background-color: rgb(170, 170, 255);
 }
 
+/* #cart-products p {
+    line-height: 2rem;
+}
+
+#cart-products p img {
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+#cart-products button {
+    border: 1px solid #000;
+    margin: 0.5rem 0; */
+
 /*------Responsive------*/
 
 @media screen and (max-width: 1000px){
@@ -125,11 +138,11 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70 vh;
+    min-height: 70 vh;  //////////////////////////
 }
 
 #profile {
-    border-color: tomato;
+    border-color: tomato;  ////////////////////////
     padding: 1rem 3rem;
     flex-basis: 20rem;
     text-align: center;

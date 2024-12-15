@@ -9,7 +9,9 @@ function addProductToCart(id) {
         return p.id == id;
     })
     cart.push(product);
-    drawCartProducts();
+    drawCartProducts();   
+    localstorage.setItem("cart", JSON.stringify(cart));
+    JSON.parse(localstorage.getItem('cart'));
 }
 
 fetch(url + '/products')
@@ -58,8 +60,7 @@ function drawCartProducts() {
         <p>Total Price: $${sum}</p>
         <button onclick="buyAll()">Buy All</button>
     `;
-    localstorage.setItem("cart", JSON.stringify(cart));
-    JSON.parse(localstorage.getItem('cart'));
+ 
 }
 
 function butALL () {

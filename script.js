@@ -9,6 +9,7 @@ function addProductToCart(id) {
         return p.id == id;
     })
     cart.push(product);
+    drawCartProducts();
 }
 
 fetch(url + '/products')
@@ -54,4 +55,9 @@ function drawCartProducts() {
         <p>Total Price: $${sum}</p>
         <button onclick="buyAll()">Buy All</button>
     `;
+}
+
+function butALL () {
+    cart = [];
+    cartProd.innerHTML = 'Money was withdrawn from your credit card';
 }

@@ -12,6 +12,11 @@ function addProductToCart(id) {
     drawCartProducts();   
     localstorage.setItem("cart", JSON.stringify(cart));
     JSON.parse(localstorage.getItem('cart'));
+
+    document.getElementById('cart-button').classList.add('active');
+    setTimeout(function(){
+        document.getElementById('cart-button').classList.remove('active');
+    }, 500);
 }
 
 fetch(url + '/products')
